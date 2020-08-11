@@ -1,0 +1,12 @@
+{
+  "name": "1_stream_class",
+  "version": "1.0.0",
+  "description": "Countstream, inherits from Writable sctream",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
