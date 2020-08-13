@@ -23,5 +23,7 @@ CountStream.prototype._write = function(chunk, encoding, cb) {
 // objects using "emit-on" pattern
 
 CountStream.prototype.end = function(){
-    this.emit('total', this.count);
+    process.nextTick(() => {
+        this.emit('total', this.count);
+    });
 }
